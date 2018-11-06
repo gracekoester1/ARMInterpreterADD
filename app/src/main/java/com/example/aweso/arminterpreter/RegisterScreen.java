@@ -51,5 +51,12 @@ public class RegisterScreen extends AppCompatActivity
     {
         //globally save the current values of all the registers such that those values are
         //accessible in MainActivity.  You should do something in MainActivity to prove this.
+
+        for (int i = 0; i < theRegisterETs.length; i++)
+        {
+            saveRegister = savedRegister + " " + theRegisterETs[i].getText().toString();
+        }
+
+        this.startActivity(i);
     }
 }
